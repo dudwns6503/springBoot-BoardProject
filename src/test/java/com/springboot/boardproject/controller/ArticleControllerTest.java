@@ -1,7 +1,7 @@
 package com.springboot.boardproject.controller;
 
 import com.springboot.boardproject.config.SecurityConfig;
-import com.springboot.boardproject.domain.type.SearchType;
+import com.springboot.boardproject.domain.constant.SearchType;
 import com.springboot.boardproject.dto.ArticleWithCommentsDto;
 import com.springboot.boardproject.dto.UserAccountDto;
 import com.springboot.boardproject.service.ArticleService;
@@ -230,7 +230,6 @@ class ArticleControllerTest {
 
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
-                1L,
                 "yeong",
                 "pw",
                 "dudwns@gmail.com",
