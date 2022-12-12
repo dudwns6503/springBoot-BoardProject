@@ -6,7 +6,7 @@ import com.springboot.boardproject.domain.constant.SearchType;
 import com.springboot.boardproject.dto.ArticleDto;
 import com.springboot.boardproject.dto.ArticleWithCommentsDto;
 import com.springboot.boardproject.dto.UserAccountDto;
-import com.springboot.boardproject.dto.requeest.ArticleRequest;
+import com.springboot.boardproject.dto.request.ArticleRequest;
 import com.springboot.boardproject.dto.response.ArticleResponse;
 import com.springboot.boardproject.service.ArticleService;
 import com.springboot.boardproject.service.PaginationService;

@@ -3,7 +3,7 @@ package com.springboot.boardproject.controller;
 import com.springboot.boardproject.domain.constant.FormStatus;
 import com.springboot.boardproject.domain.constant.SearchType;
 import com.springboot.boardproject.dto.UserAccountDto;
-import com.springboot.boardproject.dto.requeest.ArticleRequest;
+import com.springboot.boardproject.dto.request.ArticleRequest;
 import com.springboot.boardproject.dto.response.ArticleResponse;
 import com.springboot.boardproject.dto.response.ArticleWithCommentsResponse;
 import com.springboot.boardproject.service.ArticleService;
@@ -85,7 +85,7 @@ public class ArticleController {
     public String postNewArticle(ArticleRequest articleRequest) {
         // TODO: 인증 정보를 넣어줘야 한다.
         articleService.saveArticle(articleRequest.toDto(UserAccountDto.of(
-                "uno", "asdf1234", "uno@mail.com", "Uno", "memo", null, null, null, null
+                "yeong", "asdf1234", "uno@mail.com", "Uno", "memo", null, null, null, null
         )));
 
         return "redirect:/articles";
@@ -105,7 +105,7 @@ public class ArticleController {
     public String updateArticle(@PathVariable Long articleId, ArticleRequest articleRequest) {
         // TODO: 인증 정보를 넣어줘야 한다.
         articleService.updateArticle(articleId, articleRequest.toDto(UserAccountDto.of(
-                "uno", "asdf1234", "uno@mail.com", "Uno", "memo", null, null, null, null
+                "yeong", "asdf1234", "uno@mail.com", "Uno", "memo", null, null, null, null
         )));
 
         return "redirect:/articles/" + articleId;

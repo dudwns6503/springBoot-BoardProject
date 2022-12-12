@@ -1,4 +1,4 @@
-package com.springboot.boardproject.dto.requeest;
+package com.springboot.boardproject.dto.request;
 
 import com.springboot.boardproject.dto.ArticleDto;
 import com.springboot.boardproject.dto.UserAccountDto;
